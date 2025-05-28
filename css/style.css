@@ -78,12 +78,12 @@ body {
     opacity: 0;
 }
 
-.btn-white {
+.btn--white {
     background-color: #fff;
     color: #777;
 }
 
-.btn-animated {
+.btn--animated {
     animation: moveInButtom .5s ease-out .75s;
     animation-fill-mode: backwards;
     /* the animation will start 0%{} styles before the delay finish */
@@ -103,17 +103,17 @@ body {
     /* in the top left of the page is (0, 0) and we move from it right and down */
 }
 
-.logo-box {
+.header__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem;
 }
 
-.logo-box .logo {
+.header__logo-box .header__logo {
     height: 3.5rem;
 }
 
-.text-box {
+.header__text-box {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -128,7 +128,7 @@ body {
     margin-bottom: 6rem;
 }
 
-.heading-primary-main {
+.heading-primary--main {
     display: block;
     font-size: 6rem;
     font-weight: 400;
@@ -140,7 +140,7 @@ body {
     /* animation-delay: 3s; delay before start */
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
