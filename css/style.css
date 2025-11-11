@@ -26,8 +26,7 @@ body {
   /* border and padding not included in width and height */
 }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -37,18 +36,10 @@ body {
   position: relative;
   font-size: 1.6rem;
 }
-
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  /* x axis, y axis, blur color */
-}
-
 .btn:active {
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
-
 .btn::after {
   content: "";
   position: absolute;
@@ -62,18 +53,23 @@ body {
   z-index: -1;
   transition: all 0.4s;
 }
-
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  /* x axis, y axis, blur color */
+}
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   /* scale => make the element bigger or smaller */
   opacity: 0;
 }
-
 .btn--white {
   background-color: #fff;
   color: #777;
 }
-
+.btn--white::after {
+  background-color: #fff;
+}
 .btn--animated {
   animation: moveInButtom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
@@ -91,17 +87,14 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   /* in the top left of the page is (0, 0) and we move from it right and down */
 }
-
 .header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
-
-.header__logo-box .header__logo {
+.header__logo {
   height: 3.5rem;
 }
-
 .header__text-box {
   position: absolute;
   top: 40%;
@@ -116,7 +109,6 @@ body {
   /* backface-visibility: hidden; */
   margin-bottom: 6rem;
 }
-
 .heading-primary--main {
   display: block;
   font-size: 6rem;
@@ -128,7 +120,6 @@ body {
   /* animation-iteration-count: 3; number of times to repeat */
   /* animation-delay: 3s; delay before start */
 }
-
 .heading-primary--sub {
   display: block;
   font-size: 2rem;
