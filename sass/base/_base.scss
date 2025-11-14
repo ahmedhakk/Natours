@@ -1,0 +1,22 @@
+@use "../abstracts" as *;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* the box-sizing isn't inherited as a default but we tell him to inherit. */
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%;
+  /* 0.625 * 16px = 10px  || 62.5% from the default 16px  */
+  /* to switch to rem we will * 10px => 1rem = 10px */
+}
+
+body {
+  box-sizing: border-box;
+  /* border and padding not included in width and height */
+}
